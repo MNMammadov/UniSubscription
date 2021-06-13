@@ -5,7 +5,7 @@ import { Isubscr_GET } from '../../models';
 import { subscriptionService } from '../../modules/subscribe/subscrService';
 import moment from 'moment'
 import Header from '../Header';
-import Notifation from './Notifations/Notifaction';
+import Notifation from './Notifications/Notification';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import socialMediIcon from '../../assets/img/Group2.png'
 import bussinessIcon from '../../assets/img/Business2.png'
