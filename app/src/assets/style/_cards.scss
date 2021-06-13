@@ -1,0 +1,101 @@
+$bg-pink: linear-gradient(135deg, #f395ba 0%, #fed182 100%);
+$bg-blue: linear-gradient(0deg, #d2ebf7, #d2ebf7), #bcd1ff;
+$bg-purple: #bcd1ff;
+
+.card {
+    width: 99% !important;
+    border-radius: 16px !important;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5) !important;
+        transition: 1s;
+    }
+}
+
+.product-card {
+    border: 1px solid transparent !important;
+    border-radius: 16px !important;
+    .card-img {
+        border-radius: 16px 16px 0px 0px;
+        border: 1px solid transparent !important;
+
+        img {
+            width: 80%;
+        }
+    }
+    .pro-type {
+        text-transform: uppercase;
+    }
+    .pro-type,
+    .days-left {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: right;
+        color: #6e798c;
+    }
+    .days-left{
+        font-size: 15px;
+    }
+    .title,
+    .price {
+        font-family: DM Serif Display;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 25px;
+        color: #081f32;
+        margin-top: 1%;
+        text-align: start;
+    }
+    .price {
+        margin-bottom: 4%;
+        margin-top: 3%;
+        font-weight: 500;
+    }
+    .exp-date {
+        font-family: Open Sans;
+        font-style: normal;
+        margin-bottom: 7%;
+        margin-top: 3%;
+
+        font-weight: normal;
+        font-size: 15px;
+        text-align: start;
+        line-height: 19px;
+        color: #374a59;
+    }
+    .goToTheLink {
+        a {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 40px;
+            text-align: right;
+            text-decoration: none;
+            color: #007ae9;
+        }
+    }
+    .deleteProduct {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        a {
+            padding: 8px 30px;
+        }
+    }
+}
+
+.bg-pink {
+    background: $bg-pink;
+}
+.bg-blue {
+    background: $bg-blue;
+}
+.bg-purple {
+    background: $bg-purple;
+}
