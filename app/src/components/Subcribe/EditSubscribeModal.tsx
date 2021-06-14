@@ -63,7 +63,7 @@ const EditSubscribeModal: React.FC = () => {
                         <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} className="form-control my-input" id="name" placeholder="Name" />
                     </div>
                     <div className="form-group">
-                        <input type="date" value={expireDate} onChange={(e) => setExpireDate(e.target.value)} />
+                        <input type="date" value={expireDate} onChange={(e) => setExpireDate(e.target.value)} className="form-control my-input" />
                     </div>
                     <div className="form-group my-2">
                         <input type="url" value={sublink} onChange={(e) => setSublink(e.target.value)} name="sublink" id="sublink" className="form-control my-input" placeholder="Package Link" />

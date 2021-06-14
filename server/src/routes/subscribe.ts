@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { AnyObject } from "mongoose";
 import { Isubscr_GET, Isubscr_POST } from "../models";
 import { SubscrModel } from "../schema";
 
@@ -31,8 +32,16 @@ SubscribeRouter.get('/:id', async function (req, res) {
 SubscribeRouter.post('/', async function (req, res) {
     const reqPayload: Isubscr_POST = req.body;
 
-    const subscribe = new SubscrModel(reqPayload);
 
+    const subscribe = new SubscrModel(reqPayload);
+    function addDays(date: any, days: number) {
+        var result = new Date(date);
+        result.setDate(result.getDate() + days);
+        return result;
+    }
+    let expDate = addDays(Date.now(), req.body.time_interval)
+    let expDateStr = expDate.toISOString().slice(0, 10);
+    subscribe.expiration_date = expDateStr;
     try {
         const insertedSubscribe = await subscribe.save();
 
