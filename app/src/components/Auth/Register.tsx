@@ -120,7 +120,7 @@ export const Register = () => {
 
                 <div className="aside__area" id="aside_Area">
                     <div className="sign-up__aside-info">
-                        <img src="https://e.top4top.io/p_1945sidbp2.png" alt="Image" />
+                        <img src="https://e.top4top.io/p_1945sidbp2.png" alt="Register page" />
                         <p>To Keep connected with us please login with your personal info</p>
                         <button id="aside_signIn_Btn">
                             <Link to="/login">

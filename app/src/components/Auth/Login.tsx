@@ -77,7 +77,7 @@ export const Login = () => {
 
                 <div className="aside__area" id="aside_Area">
                     <div className="login__aside-info">
-                        <img src="https://d.top4top.io/p_1945xjz2y1.png" alt="Image" />
+                        <img src="https://d.top4top.io/p_1945xjz2y1.png" alt="login page" />
                         <p>Enter your personal details and start journey with us</p>
                         <button id="aside_signUp_Btn"><Link to="/register">Sign Up</Link></button>
                     </div>
