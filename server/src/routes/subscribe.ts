@@ -6,9 +6,9 @@ export const SubscribeRouter = Router();
 
 SubscribeRouter.get('/', async function (req, res) {
     try {
-        const songs = await SubscrModel.find();
+        const subscribe = await SubscrModel.find();
 
-        res.json(songs);
+        res.json(subscribe);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
@@ -16,12 +16,12 @@ SubscribeRouter.get('/', async function (req, res) {
 
 SubscribeRouter.get('/:id', async function (req, res) {
     try {
-        const song = await SubscrModel.findById(req.params.id);
+        const subscribe = await SubscrModel.findById(req.params.id);
 
-        if (!song) {
+        if (!subscribe) {
             res.sendStatus(404);
         } else {
-            res.json(song);
+            res.json(subscribe);
         }
     } catch (err) {
         res.status(500).json({ message: err.message });

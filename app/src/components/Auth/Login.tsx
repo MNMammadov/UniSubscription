@@ -38,7 +38,6 @@ export const Login = () => {
         <div id="body">
             <div className="wrapper__area" id="wrapper_Area">
                 <div className="forms__area">
-                    {/* FORM START  */}
 
                     <form
                         className="login__form"
@@ -57,7 +56,6 @@ export const Login = () => {
                                     id="loginUsername" />
                             </label>
                             <span className="input__icon"><i className="bx bx-user"></i></span>
-                            {/* <small className="input__error_message"></small> */}
                         </div>
                         <div className="input__group">
                             <label className="field">
@@ -71,12 +69,10 @@ export const Login = () => {
                             </label>
                             <span className="input__icon"><i className="bx bx-lock"></i></span>
                             <span className="showHide__Icon"><i className="bx bx-hide"></i></span>
-                            {/* <small className="input__error_message"></small> */}
                         </div>
                         <button type="submit" className="submit-button" id="loginSubmitBtn">Sign in</button>
                     </form>
 
-                    {/* FORM END */}
                 </div>
 
                 <div className="aside__area" id="aside_Area">

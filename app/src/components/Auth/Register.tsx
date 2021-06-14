@@ -24,7 +24,7 @@ export const Register = () => {
         }))
     }
     const history = useHistory();
-    const submitMutation = useMutation(registerService.loginSubsc);
+    const submitMutation = useMutation(registerService.registerSubsc);
     const handleRegisterSubmit = (e) => {
         e.preventDefault();
         if (formState.email && formState.password && confirmPass) {
@@ -47,8 +47,6 @@ export const Register = () => {
             <div className="wrapper__area" id="wrapper_Area">
                 <div className="forms__area">
 
-                    {/* FORM START */}
-
                     <form onSubmit={(e) => handleRegisterSubmit(e)} className="sign-up__form" id="signUpForm">
                         <h1 className="form__title">Sign Up!</h1>
                         <div className="input__group">
@@ -62,7 +60,6 @@ export const Register = () => {
                                     id="signUpName" />
                             </label>
                             <span className="input__icon"><i className="bx bx-at"></i></span>
-                            {/* <small className="input__error_message"></small> */}
                         </div>
                         <div className="input__group">
                             <label className="field">
@@ -75,7 +72,6 @@ export const Register = () => {
                                     id="signUpName" />
                             </label>
                             <span className="input__icon"><i className="bx bx-at"></i></span>
-                            {/* <small className="input__error_message"></small> */}
                         </div>
                         <div className="input__group">
                             <label className="field">
@@ -88,7 +84,6 @@ export const Register = () => {
                                     id="signUpEmail" />
                             </label>
                             <span className="input__icon"><i className="bx bx-at"></i></span>
-                            {/* <small className="input__error_message"></small> */}
                         </div>
 
                         <div className="input__group">
@@ -103,7 +98,6 @@ export const Register = () => {
                             </label>
                             <span className="input__icon"><i className="bx bx-lock"></i></span>
                             <span className="showHide__Icon"><i className="bx bx-hide"></i></span>
-                            {/* <small className="input__error_message"></small> */}
                         </div>
 
                         <div className="input__group confirm__group">
@@ -122,9 +116,6 @@ export const Register = () => {
                         </div>
                         <button type="submit" className="submit-button" id="signUpSubmitBtn">Sign Up</button>
                     </form>
-                    {/* FORM END */}
-
-
                 </div>
 
                 <div className="aside__area" id="aside_Area">
@@ -132,7 +123,9 @@ export const Register = () => {
                         <img src="https://e.top4top.io/p_1945sidbp2.png" alt="Image" />
                         <p>To Keep connected with us please login with your personal info</p>
                         <button id="aside_signIn_Btn">
-                            <Link to="/login">    Sign In</Link>
+                            <Link to="/login">
+                                Sign In
+                            </Link>
                         </button>
                     </div>
                 </div>
